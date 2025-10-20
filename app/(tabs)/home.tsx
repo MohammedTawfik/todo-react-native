@@ -1,7 +1,7 @@
 import { createHomeStyles } from "@/assets/styles/home.style";
+import Header from "@/components/home/header";
 import useTheme from "@/hooks/useTheme";
 import { LinearGradient } from "expo-linear-gradient";
-import { StatusBar, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -16,13 +16,7 @@ export default function Index() {
       <SafeAreaView
         style={styles.safeArea}
       >
-        <Text>Edit app/index.tsx to edit this screen.</Text>
-        <TouchableOpacity
-          style={styles.addButton}
-          onPress={toggleDarkMode}
-        >
-          <Text>Add Todo</Text>
-        </TouchableOpacity>
+        <Header />
       </SafeAreaView>
     </LinearGradient>
   );
