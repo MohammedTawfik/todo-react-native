@@ -13,7 +13,7 @@ const Header = () => {
     const todos = useQuery(api.todos.getTodos);
     const completedTodos = todos?.filter((todo) => todo.completed);
     const totalTodos = todos?.length ?? 0;
-    const completedPercentage = (completedTodos?.length ?? 0 / totalTodos) * 100;
+    const completedPercentage = ((completedTodos?.length ?? 0) / totalTodos) * 100;
 
     return (
         <View style={styles.header}>

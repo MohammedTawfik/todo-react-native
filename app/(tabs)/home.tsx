@@ -1,6 +1,7 @@
 import { createHomeStyles } from "@/assets/styles/home.style";
 import AddTodo from "@/components/home/add-todo";
 import Header from "@/components/home/header";
+import TodoList from "@/components/home/todo-list";
 import useTheme from "@/hooks/useTheme";
 import { LinearGradient } from "expo-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -19,6 +20,8 @@ export default function Index() {
       >
         <Header />
         <AddTodo />
+        <TodoList />
+
       </SafeAreaView>
     </LinearGradient>
   );
